@@ -1,0 +1,376 @@
+/* PRINCIPAIS */
+* {
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    color: white;
+    font-family: 'Arsenal', sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar-fixed-top{
+    background-color: #003A71;
+    border-radius: 0px;
+}
+
+.navbar-default .navbar-nav > li > a{
+    color: white;
+    font-size: 15px;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+    background-color: #E9CA5F;
+    border-bottom: 3px solid #C24564;
+}
+
+.nav > li{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.navbar-default{
+    border: none;
+}
+
+/* CAROUSEL */
+
+#carousel{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.slider {
+  width: 100%;
+  position: relative;
+}
+
+.slider > ul{
+  list-style-type: none;
+  width: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.slider > ul >li {
+  width: inherit;
+}
+
+.slider > ul > li img {
+  width: inherit;
+}
+
+.slider > .controles {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+
+#proximo {
+  right: 0;
+  position: absolute;
+}
+
+#anterior {
+  left: 0;
+  position: absolute;
+}
+
+.slider-item {
+  display: none;
+}
+
+.slider-item.active {
+  display: block;
+}
+
+.controles > #anterior, .controles > #proximo {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0 10px 0 10px; 
+  cursor: pointer;
+  margin: 0 0 0 10px;
+}
+
+/* CONHEÇA */
+
+#conheca{
+    background-color: #2D3E55;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    text-align: justify;
+    font-size: 15px;
+}
+
+#conheca h1{
+    font-family: 'Rockwell';
+    text-transform: uppercase;
+    font-weight: bold;;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#conheca img{
+    width: 50px;
+    padding-bottom: 15px;
+    margin: 0 auto;
+}
+
+.row-1, .row-2{
+    padding-bottom: 30px;
+}
+
+/* COMO FUNCIONA */
+
+#comofunciona{
+    background-color: #EFDFCA;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    color: #2D3E55;
+}
+
+#comofunciona h1{
+    font-family: 'Rockwell';
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #2D3E55;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#comofunciona p{
+    color: #2D3E55;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 35px;
+    font-weight: bold;
+}
+
+#comofunciona img{
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* DEPOIMENTOS */
+
+#depoimentos{
+    background-image: url("../img/fundo_depoimento.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 150px;
+    padding-top: 150px;
+    color: white;
+}
+
+.picture img{
+   width: 150px;
+   border-radius: 50%;
+   border: 5px solid #E9CA5F;
+   margin: 0 auto;
+}
+
+.testimonial{
+    margin: 0; 
+    padding: 15px 50px;     
+    position: relative;          
+    border: none;     
+    font-style: italic;
+    text-align: justify;     
+    text-shadow: 0 1px 0 black;     
+} 
+
+.testimonial:before, .testimonial:after{
+    content: "\201C";
+    position: absolute;
+    font-size: 80px;
+    line-height: 1;
+    color: #E9CA5F;
+    font-style: normal;
+    font-family: Georgia, serif; 
+} 
+
+.testimonial:before{    
+     top: 0;     
+     left: 10px; 
+} 
+
+.testimonial:after{
+    content: "\201D";    
+    right: 10px;     
+    bottom: -0.5em;    
+}
+
+.testimonial-author{     
+    color: #E9CA5F;    
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold; 
+} 
+
+.testimonial-author span{     
+    font-size: 16px;     
+    font-weight: lighter;
+    font-style: italic;
+    color: white;
+} 
+
+/* DOWNLOAD */
+
+#download{
+    background-color: #003A71;
+    padding-bottom: 150px;
+    padding-top: 150px;
+    text-align: center
+}
+
+#download h1{
+    font-family: 'Rockwell';
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#download img{
+    width: 250px;
+    padding-top: 30px;
+}
+
+/* CADASTRO */
+
+#cadastro{
+    background-color: #E9CA5F;
+    padding-bottom: 150px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+#cadastro h1{
+    text-transform: uppercase;
+}
+
+.formulario input[type="email"]{
+    width: 65%;
+    height: 40px;
+    border-width: 0;
+    padding-left: 10px;
+    margin: 25px;
+    color: black;
+}
+
+.formulario input[type="email"]:focus{
+    outline: none;
+}
+
+.formulario input[type="submit"]{
+    background-color: #003A71;
+    border: 0;
+    margin-top: 10px;
+    padding: 10px 35px;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 35px;
+}
+
+#cadastro h1{
+    font-family: 'Rockwell';
+    text-transform: uppercase;
+    font-weight: bold;;
+    text-align: center;
+}
+
+.formulario input[type="submit"]:hover{
+    background-color: #E9CA5F;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #C24564;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+footer p{
+    color: white;
+}
+
+a{
+    color: white;
+}
+
+.endereco a:hover{
+    background-color: white;
+    color: #C24564;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.copyright p{
+    text-align: center;
+    font-size: 14px;
+    padding-top: 50px;
+}
+
+.endereco{
+    text-align: left;
+    font-size: 15px;
+}
+
+.endereco img{
+    width: 25px;
+    padding-right: 10px;
+}
+
+.socialmedia{
+    text-align: left;
+    font-size: 15px;
+}
+
+.socialmedia p{
+    padding: 0;
+    max-width: 300px;    
+}
+
+.socialmedia img{
+    width: 35px;
+    padding: 0 5px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+    .endereco{
+        text-align: center;
+    }
+
+    .socialmedia{
+        padding-top: 15px;
+        text-align: center;
+    }
+
+    .picture{
+        padding-top: 20px;
+    }
+
+    .formulario input[type="email"]{
+        width: 85%; 
+    }
+
+    .formulario input[type="submit"]{
+        width: 60%;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    #conheca img{
+        width: 30px;
+    }
+}
+
